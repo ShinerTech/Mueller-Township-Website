@@ -48,9 +48,22 @@ document.addEventListener('DOMContentLoaded', function() {
   const navLinks = document.querySelectorAll('.main-nav a');
   
   navLinks.forEach(link => {
-    // Basic check for exact match or current directory match
-    if (link.getAttribute('href') === currentPath || 
-        (currentPath !== '/' && link.getAttribute('href').includes(currentPath.split('/')[1]))) {
+    const href = link.getAttribute('href');
+    
+    // Normalize paths for comparison
+    const normalizedCurrentPath = currentPath.replace(/\/$/, '');
+    const normalizedHref = href.replace(/\/$/, '');
+    
+    // Exact match for active page
+    if (normalizedHref === normalizedCurrentPath) {
+      link.classList.add('active');
+    }
+    // Special case: homepage should match both '/' and '/index.htm'
+    else if (normalizedCurrentPath === '/index.htm' && normalizedHref === '/') {
+      link.classList.add('active');
+    }
+    // Special case: homepage should match '/index.htm' exactly
+    else if (normalizedCurrentPath === '/index.htm' && normalizedHref === '/index.htm') {
       link.classList.add('active');
     }
   });
