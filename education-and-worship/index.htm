@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Education & Worship - Mueller Township</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <style>
+    .section-title {
+      color: #1e73be;
+      border-bottom: 2px solid #dd3333;
+      padding-bottom: 0.5rem;
+      margin-top: 3rem;
+      margin-bottom: 1.5rem;
+    }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      gap: 2rem;
+    }
+    .info-card {
+      background: white;
+      border: 1px solid #eaeaea;
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .info-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    }
+    .info-title {
+      color: #dd3333;
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      font-size: 1.25rem;
+    }
+    .info-desc {
+      color: #555;
+      margin-bottom: 1rem;
+      line-height: 1.5;
+    }
+    .info-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .info-list li {
+      margin-bottom: 0.5rem;
+      font-size: 0.95rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+    .info-list i {
+      color: #1e73be;
+      margin-top: 0.2rem;
+      width: 16px;
+      text-align: center;
+    }
+    .info-list a {
+      color: #1e73be;
+      text-decoration: none;
+      word-break: break-word;
+    }
+    .info-list a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-info">
+        <span><i class="fas fa-map-marker-alt"></i> 1805 Quarry Rd., Gulliver, MI 49840</span>
+        <span><i class="fas fa-phone"></i> 906-450-4149</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header & Nav -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-main">
+        <div class="logo">
+          <a href="/index.htm">
+            <img src="/wp-content/uploads/2022/02/cropped-Mueller-Township-2.png" alt="Mueller Township Logo" />
+          </a>
+        </div>
+        
+        <button class="mobile-nav-toggle" id="mobile-nav-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <nav class="main-nav" id="main-nav">
+          <ul>
+            <li><a href="/index.htm">Home</a></li>
+            <li><a href="/about-us/index.htm">About</a></li>
+            <li><a href="/services/index.htm">Services</a></li>
+            <li><a href="/contact-us/index.htm">Contact</a></li>
+            <li><a href="/events/index.htm">Events</a></li>
+            <li><a href="/records/index.htm">Records</a></li>
+            <li><a href="/blog/index.htm">Blog</a></li>
+            <li><a href="/local-businesses/index.htm">Businesses & Attractions</a></li>
+            <li><a href="/education-and-worship/index.htm" class="active">Education & Worship</a></li>
+            <li><a href="/gallery/index.htm">Gallery</a></li>
+            <li><a href="/links/index.htm">Links</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="footer-gradient-bar"></div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="container">
+      <h1 class="page-title text-center">Education & Worship</h1>
+      
+      <h2 class="section-title">Education</h2>
+      <div class="card-grid">
+        
+        <div class="info-card">
+          <h3 class="info-title">Manistique Area Schools</h3>
+          <p class="info-desc">Grades kindergarten through 12th.</p>
+          <ul class="info-list">
+            <li><i class="fas fa-globe"></i> <a href="https://manistiqueschools.org/" target="_blank">manistiqueschools.org</a></li>
+            <li><i class="fab fa-facebook"></i> <a href="https://m.facebook.com" target="_blank">Facebook Page</a></li>
+            <li><i class="fas fa-map-marker-alt"></i> 104 N Cedar Street, Manistique, MI 49854</li>
+            <li><i class="fas fa-phone"></i> 906-252-4330</li>
+          </ul>
+        </div>
+
+        <div class="info-card">
+          <h3 class="info-title">St Francis de Sales</h3>
+          <p class="info-desc">Grades kindergarten through 8th.</p>
+          <ul class="info-list">
+            <li><i class="fas fa-globe"></i> <a href="http://stfrancisofmanistique.weconnect.com/" target="_blank">stfrancisofmanistique.weconnect.com</a></li>
+            <li><i class="fab fa-facebook"></i> <a href="https://www.facebook.com/sfdsraiders" target="_blank">St. Francis de Sales School</a></li>
+            <li><i class="fas fa-map-marker-alt"></i> 210 Lake Street, Manistique, MI 49854</li>
+            <li><i class="fas fa-phone"></i> 906-341-5512</li>
+          </ul>
+        </div>
+
+        <div class="info-card">
+          <h3 class="info-title">Three Lakes Academy</h3>
+          <p class="info-desc">Community based kindergarten through 7th, no tuition, Michigan public charter school.</p>
+          <ul class="info-list">
+            <li><i class="fas fa-globe"></i> <a href="http://3lakesacademy.com/" target="_blank">3lakesacademy.com</a></li>
+            <li><i class="fab fa-facebook"></i> <a href="https://www.facebook.com/threelakesacademy" target="_blank">Three Lakes Academy</a></li>
+            <li><i class="fas fa-map-marker-alt"></i> W 17540 Main Street, Curtis, MI 49820</li>
+            <li><i class="fas fa-phone"></i> 906-586-6631</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <h2 class="section-title">Worship</h2>
+      <div class="card-grid">
+
+        <div class="info-card">
+          <h3 class="info-title">Divine Infant of Prague</h3>
+          <ul class="info-list" style="margin-top: 1rem;">
+            <li><i class="fas fa-globe"></i> <a href="http://dioceseofmarquette.org/divineinfantgulliver" target="_blank">dioceseofmarquette.org/divineinfantgulliver</a></li>
+            <li><i class="fas fa-map-marker-alt"></i> 1985W US-2 Gulliver, MI 49849</li>
+            <li><i class="fas fa-phone"></i> 906-341-3590</li>
+          </ul>
+        </div>
+
+        <div class="info-card">
+          <h3 class="info-title">Maple Grove Community Church</h3>
+          <p class="info-desc">All welcome, come as you are. Sunday School 10:00 am and Church at 11:00 am</p>
+          <ul class="info-list">
+            <li><i class="fas fa-map-marker-alt"></i> US-2 Gulliver, MI 49840</li>
+            <li><i class="fas fa-phone"></i> 906-283-3433</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer mt-3">
+    <div class="footer-gradient-bar mb-2"></div>
+    <div class="container">
+      <p>Copyright of SineTech LLC 2022</p>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

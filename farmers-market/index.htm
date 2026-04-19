@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Farmer's Market - Mueller Township</title>
+  
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <style>
+    .vendor-list {
+      margin-top: 2rem;
+    }
+    .vendor-card {
+      background: white;
+      border: 1px solid #eaeaea;
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    .vendor-card h3 {
+      margin-top: 0;
+      color: #1e73be;
+      border-bottom: 2px solid #dd3333;
+      display: inline-block;
+      padding-bottom: 0.25rem;
+    }
+    .vendor-card ul {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 1rem;
+    }
+    .vendor-card ul li {
+      margin-bottom: 0.5rem;
+    }
+    .vendor-card i {
+      color: #444;
+      width: 20px;
+      text-align: center;
+      margin-right: 8px;
+    }
+    .back-btn {
+      display: inline-block;
+      margin-bottom: 1rem;
+      color: #1e73be;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .back-btn:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-info">
+        <span><i class="fas fa-map-marker-alt"></i> 1805 Quarry Rd., Gulliver, MI 49840</span>
+        <span><i class="fas fa-phone"></i> 906-450-4149</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header & Nav -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-main">
+        <div class="logo">
+          <a href="/index.htm">
+            <img src="/wp-content/uploads/2022/02/cropped-Mueller-Township-2.png" alt="Mueller Township Logo" />
+          </a>
+        </div>
+        
+        <button class="mobile-nav-toggle" id="mobile-nav-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <nav class="main-nav" id="main-nav">
+          <ul>
+            <li><a href="/index.htm">Home</a></li>
+            <li><a href="/about-us/index.htm">About</a></li>
+            <li><a href="/services/index.htm">Services</a></li>
+            <li><a href="/contact-us/index.htm">Contact</a></li>
+            <li><a href="/events/index.htm" class="active">Events</a></li>
+            <li><a href="/records/index.htm">Records</a></li>
+            <li><a href="/blog/index.htm">Blog</a></li>
+            <li><a href="/local-businesses/index.htm">Businesses & Attractions</a></li>
+            <li><a href="/education-and-worship/index.htm">Education & Worship</a></li>
+            <li><a href="/gallery/index.htm">Gallery</a></li>
+            <li><a href="/links/index.htm">Links</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="footer-gradient-bar"></div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="container">
+      <a href="/events/index.htm" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Events</a>
+      <h1 class="page-title text-center">Farmer's Market</h1>
+      
+      <div class="content-box text-center">
+        <p><strong>Winter Schedule</strong> – Last day 31 January 2026, restart Fall 2026 TBD</p>
+        <p><strong>Summer Schedule</strong> – Times to be announced.</p>
+      </div>
+
+      <!-- Feature Image Slider -->
+      <div class="swiper-container mt-2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="/wp-content/uploads/2022/02/20220220_132533-1024x660.jpg" alt="Farmer's Market View"></div>
+          <div class="swiper-slide"><img src="/wp-content/uploads/2022/02/20220220_132629-1024x548.jpg" alt="Farmer's Market View"></div>
+          <div class="swiper-slide"><img src="/wp-content/uploads/2022/02/20220220_132557-623x1024.jpg" alt="Farmer's Market View"></div>
+          <div class="swiper-slide"><img src="/wp-content/uploads/2022/02/20220220_132615-635x1024.jpg" alt="Farmer's Market View"></div>
+          <div class="swiper-slide"><img src="/wp-content/uploads/2022/02/20220220_132706-1024x451.jpg" alt="Farmer's Market View"></div>
+          <div class="swiper-slide"><img src="/wp-content/uploads/2022/02/20220220_132644-1024x468.jpg" alt="Farmer's Market View"></div>
+          <div class="swiper-slide"><img src="/wp-content/uploads/2022/02/20220220_132935-562x1024.jpg" alt="Farmer's Market View"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+      <h2 class="mt-3">Vendors</h2>
+      <div class="vendor-list">
+        
+        <div class="vendor-card">
+          <h3>Beth's Stuff</h3>
+          <p>Beth's Creations</p>
+          <ul>
+            <li><i class="fab fa-facebook"></i> <a href="https://www.facebook.com/groups/171937467930840" target="_blank">Beth's Craft Stuff Exchange</a></li>
+            <li><i class="fas fa-map-marker-alt"></i> Gulliver, MI 49840</li>
+            <li><i class="fas fa-phone"></i> 989-274-2672</li>
+          </ul>
+        </div>
+        
+        <div class="vendor-card">
+          <h3>Blessing Moon Herbs North Woods Farm</h3>
+          <p>Clinical Herbalist</p>
+          <ul>
+            <li><i class="fas fa-globe"></i> blessingmonherbsNWF.com</li>
+            <li><i class="fas fa-envelope"></i> BlessingmoonherbsNWF@gmail.com</li>
+            <li><i class="fas fa-phone"></i> 808-216-8131</li>
+          </ul>
+        </div>
+
+        <div class="vendor-card">
+          <h3>Elmwood Farms</h3>
+          <p>Certified Grass-Fed Beef</p>
+          <ul>
+            <li><i class="fas fa-globe"></i> <a href="http://elmwoodfarms.wixsite.com" target="_blank">elmwoodfarms.wixsite.com</a></li>
+            <li><i class="fas fa-envelope"></i> <a href="mailto:elmwoodfarms@yahoo.com">elmwoodfarms@yahoo.com</a></li>
+            <li><i class="fas fa-map-marker-alt"></i> Clark Road, Gould City 49838</li>
+            <li><i class="fas fa-phone"></i> 906-430-8535</li>
+          </ul>
+        </div>
+
+        <div class="vendor-card">
+          <h3>Furlong Creek Farm</h3>
+          <p>Organic Produce & Artisanal Breads and Pastured Lamb-Beef-Pork</p>
+          <ul>
+            <li><i class="fas fa-globe"></i> <a href="http://furlongcreekfarm.com" target="_blank">furlongcreekfarm.com</a></li>
+            <li><i class="fab fa-facebook"></i> <a href="https://www.facebook.com/FurlongCreekFarm" target="_blank">Furlong Creek Farm</a></li>
+            <li><i class="fas fa-map-marker-alt"></i> W13851 Raski Rd, Engadine, MI 49827</li>
+            <li><i class="fas fa-phone"></i> 906-477-1057</li>
+          </ul>
+        </div>
+
+        <div class="vendor-card">
+          <h3>Krause Farm</h3>
+          <p>Honey, syrup, and organic vegetables</p>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> 1 W 13456 Raski Road, Engadine, MI 49827</li>
+            <li><i class="fas fa-phone"></i> 906-477-6537</li>
+          </ul>
+        </div>
+
+        <div class="vendor-card">
+          <h3>Marblehead Homestead</h3>
+          <p>Specialty Teas</p>
+          <ul>
+            <li><i class="fas fa-globe"></i> ourmarbleheadhomsetead.com</li>
+            <li><i class="fas fa-phone"></i> 906-450-1592</li>
+          </ul>
+        </div>
+
+        <div class="vendor-card">
+          <h3>Levi and Fannies</h3>
+          <p>Baked goods, apple fritters, and donuts</p>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> 13627 Raski Road, Engadine, MI 49827</li>
+          </ul>
+        </div>
+
+        <div class="vendor-card">
+          <h3>Pell's Pie Patch</h3>
+          <p>Gourmet Pies, Grass Fed Leelandie Lamb & Pastured Pork & Poultry</p>
+          <ul>
+            <li><i class="fas fa-globe"></i> <a href="http://pellspiepatch.com" target="_blank">pellspiepatch.com</a></li>
+            <li><i class="fab fa-facebook"></i> <a href="https://www.facebook.com/PellsPiePatch" target="_blank">Pells Pie Patch & Family Farm</a></li>
+            <li><i class="fas fa-map-marker-alt"></i> W19065 US Highway 2, Gould City, MI 49838</li>
+            <li><i class="fas fa-phone"></i> 906-287-5041</li>
+          </ul>
+        </div>
+
+        <div class="vendor-card">
+          <h3>Rapid River Candle Co</h3>
+          <ul>
+            <li><i class="fas fa-envelope"></i> RapidRiverCandleco@gmsil.com</li>
+            <li><i class="fas fa-phone"></i> Tina: 602-687-3736 or Jacob: 928-856-9672</li>
+          </ul>
+        </div>
+
+        <div class="vendor-card">
+          <h3>TAE's Garden & Apron Strings</h3>
+          <p>Freeze dried fruits and vegetables</p>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> 1021 Minnesota Ave. Gladstone Mi 49837</li>
+            <li><i class="fas fa-phone"></i> 906-751-1934</li>
+          </ul>
+        </div>
+
+        <div class="vendor-card">
+          <h3>The Cake Lady</h3>
+          <p>Gourmet Cakes & Custom Desserts</p>
+          <ul>
+            <li><i class="fas fa-phone"></i> 906-286-1572</li>
+            <li><i class="fas fa-globe"></i> thecakeladyat19acres.com</li>
+            <li><i class="fas fa-envelope"></i> thecakeladyat19acres@gmail.com</li>
+          </ul>
+        </div>
+
+        <div class="vendor-card">
+          <h3>Tucker Farm</h3>
+          <p>Eggs, maple sugar and syrup</p>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> 1624 W US Highway 2, Gulliver, MI 49838</li>
+            <li><i class="fas fa-phone"></i> 815-685-0828</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-gradient-bar mb-2"></div>
+    <div class="container">
+      <p>&copy; 2026 Mueller Township. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  
+  <!-- Custom JS -->
+  <script src="/assets/js/main.js"></script>
+
+</body>
+</html>

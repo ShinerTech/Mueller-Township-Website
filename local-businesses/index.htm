@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Businesses and Attractions - Mueller Township</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <style>
+    .business-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .business-card {
+      background: white;
+      border: 1px solid #eaeaea;
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .business-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    }
+    .business-name {
+      color: #dd3333;
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      font-size: 1.25rem;
+    }
+    .business-desc {
+      color: #555;
+      margin-bottom: 1rem;
+      line-height: 1.5;
+    }
+    .business-info-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .business-info-list li {
+      margin-bottom: 0.5rem;
+      font-size: 0.95rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+    .business-info-list i {
+      color: #1e73be;
+      margin-top: 0.2rem;
+      width: 16px;
+      text-align: center;
+    }
+    .business-info-list a {
+      color: #1e73be;
+      text-decoration: none;
+      word-break: break-word;
+    }
+    .business-info-list a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-info">
+        <span><i class="fas fa-map-marker-alt"></i> 1805 Quarry Rd., Gulliver, MI 49840</span>
+        <span><i class="fas fa-phone"></i> 906-450-4149</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header & Nav -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-main">
+        <div class="logo">
+          <a href="/index.htm">
+            <img src="/wp-content/uploads/2022/02/cropped-Mueller-Township-2.png" alt="Mueller Township Logo" />
+          </a>
+        </div>
+        
+        <button class="mobile-nav-toggle" id="mobile-nav-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <nav class="main-nav" id="main-nav">
+          <ul>
+            <li><a href="/index.htm">Home</a></li>
+            <li><a href="/about-us/index.htm">About</a></li>
+            <li><a href="/services/index.htm">Services</a></li>
+            <li><a href="/contact-us/index.htm">Contact</a></li>
+            <li><a href="/events/index.htm">Events</a></li>
+            <li><a href="/records/index.htm">Records</a></li>
+            <li><a href="/blog/index.htm">Blog</a></li>
+            <li><a href="/local-businesses/index.htm" class="active">Businesses & Attractions</a></li>
+            <li><a href="/education-and-worship/index.htm">Education & Worship</a></li>
+            <li><a href="/gallery/index.htm">Gallery</a></li>
+            <li><a href="/links/index.htm">Links</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="footer-gradient-bar"></div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="container">
+      <h1 class="page-title text-center">Businesses and Attractions</h1>
+      
+      <div class="business-grid">
+        
+        <div class="business-card">
+          <h3 class="business-name">77 North</h3>
+          <p class="business-desc">Adult cannabis products and growth facility. Located in Historic old Blaney Park.</p>
+          <ul class="business-info-list">
+            <li><i class="fas fa-globe"></i> <a href="https://77northinc.com/" target="_blank">77northinc.com</a></li>
+            <li><i class="fab fa-facebook"></i> <a href="https://www.facebook.com/77NorthInc" target="_blank">77 North on Facebook</a></li>
+            <li><i class="fas fa-map-marker-alt"></i> 4404 M-77, Gulliver, MI 49836</li>
+            <li><i class="fas fa-phone"></i> 906-207-7777</li>
+          </ul>
+        </div>
+
+        <div class="business-card">
+          <h3 class="business-name">Alpine Landscape and Supply</h3>
+          <p class="business-desc">Amish built sheds and furniture, mulch, topsoil, stone, straw, firewood, Fire Rings, Pick-up, Delivery, Installation</p>
+          <ul class="business-info-list">
+            <li><i class="fas fa-globe"></i> <a href="http://alpinelandscapeandsupply.godaddysites.com" target="_blank">alpinelandscapeandsupply.godaddysites.com</a></li>
+            <li><i class="fas fa-map-marker-alt"></i> 760 W. US Highway 2, Germfask Michigan 49835</li>
+            <li><i class="fas fa-phone"></i> 989-370-3915</li>
+          </ul>
+        </div>
+
+        <div class="business-card">
+          <h3 class="business-name">Bear Creek Logging</h3>
+          <p class="business-desc">Logging contractor located in Gulliver.</p>
+          <ul class="business-info-list">
+            <li><i class="fas fa-globe"></i> <a href="https://www.bearcreeklogging.com/" target="_blank">bearcreeklogging.com</a></li>
+            <li><i class="fas fa-map-marker-alt"></i> 1622 US-2, Gulliver, MI 49840</li>
+            <li><i class="fas fa-phone"></i> 906-450-2899</li>
+          </ul>
+        </div>
+
+        <div class="business-card">
+          <h3 class="business-name">Bear Creek Resort</h3>
+          <p class="business-desc">Amazing cabins located in Historic Blaney Park.</p>
+          <ul class="business-info-list">
+            <li><i class="fas fa-globe"></i> <a href="https://www.bearcreekatblaneypark.com/" target="_blank">bearcreekatblaneypark.com</a></li>
+            <li><i class="fab fa-facebook"></i> <a href="https://www.facebook.com/exploretheupperpeninsula" target="_blank">Bear Creek Resort Blaney Park, MI</a></li>
+            <li><i class="fas fa-map-marker-alt"></i> 4435 M-77, Gulliver, MI 49836</li>
+            <li><i class="fas fa-phone"></i> 920-246-1157</li>
+          </ul>
+        </div>
+
+        <div class="business-card">
+          <h3 class="business-name">Beth's Stuff</h3>
+          <p class="business-desc">Buying, selling and trading. Beth's creations.</p>
+          <ul class="business-info-list">
+            <li><i class="fab fa-facebook"></i> <a href="https://www.facebook.com/groups/171937467930840" target="_blank">Beth's Craft Stuff Exchange</a></li>
+            <li><i class="fas fa-map-marker-alt"></i> Gulliver, MI 49840</li>
+            <li><i class="fas fa-phone"></i> 989-274-2672</li>
+          </ul>
+        </div>
+
+        <div class="business-card">
+          <h3 class="business-name">Blaney Park Antiques</h3>
+          <p class="business-desc">Antique store located in Blaney Park.</p>
+          <ul class="business-info-list">
+            <li><i class="fab fa-facebook"></i> <a href="https://www.facebook.com/Blaney-Park-Antiques-324145031101919" target="_blank">Blaney Park Antiques on Facebook</a></li>
+            <li><i class="fas fa-map-marker-alt"></i> 4370N State Hwy M-77, Blaney Park, MI 49836</li>
+            <li><i class="fas fa-phone"></i> 906-283-1515</li>
+          </ul>
+        </div>
+
+        <div class="business-card">
+          <h3 class="business-name">Blessing Moon Herbs</h3>
+          <p class="business-desc">North Woods Farm Clinical Herbalist</p>
+          <ul class="business-info-list">
+            <li><i class="fas fa-globe"></i> <a href="http://blessingmoonnherbsNWF.com" target="_blank">blessingmoonnherbsNWF.com</a></li>
+            <li><i class="fas fa-envelope"></i> <a href="mailto:BlessingmoonherbsNWF@gmail.com">BlessingmoonherbsNWF@gmail.com</a></li>
+            <li><i class="fas fa-map-marker-alt"></i> 1179 Ann Drive, Germfask, MI 49836</li>
+            <li><i class="fas fa-phone"></i> 808-216-8131</li>
+          </ul>
+        </div>
+
+        <div class="business-card">
+          <h3 class="business-name">Blue Water Ink and Toner</h3>
+          <p class="business-desc">Providing businesses with printer supplies.</p>
+          <ul class="business-info-list">
+            <li><i class="fas fa-globe"></i> <a href="https://bluewaterinkandtoner.com/index.html" target="_blank">bluewaterinkandtoner.com</a></li>
+            <li><i class="fab fa-facebook"></i> <a href="https://www.facebook.com/Blue-Water-Ink-and-Toner-117730834928910" target="_blank">Blue Water Ink and Toner on Facebook</a></li>
+            <li><i class="fas fa-phone"></i> 906-450-4894</li>
+          </ul>
+        </div>
+
+        <div class="business-card">
+          <h3 class="business-name">BP Gas</h3>
+          <p class="business-desc">Gas station and minimart</p>
+          <ul class="business-info-list">
+            <li><i class="fas fa-map-marker-alt"></i> 1223 US-2, Gulliver, MI 49840</li>
+            <li><i class="fas fa-phone"></i> 906-283-4010</li>
+          </ul>
+        </div>
+
+        <div class="business-card">
+          <h3 class="business-name">Carmeuse Lime and Stone</h3>
+          <p class="business-desc">Limestone processing.</p>
+          <ul class="business-info-list">
+            <li><i class="fas fa-map-marker-alt"></i> 15W Co Rd 432 Gulliver, MI 49840</li>
+            <li><i class="fas fa-phone"></i> 906-283-3456</li>
+          </ul>
+        </div>
+
+        <div class="business-card">
+          <h3 class="business-name">Celibeth House Bed and Breakfast</h3>
+          <p class="business-desc">Old town charm with 8 suites located in historic Blaney Park.</p>
+          <ul class="business-info-list">
+            <li><i class="fas fa-map-marker-alt"></i> 4446N M-77, Gulliver, MI 49836</li>
+            <li><i class="fas fa-phone"></i> 906-283-3409</li>
+          </ul>
+        </div>
+
+        <div class="business-card">
+          <h3 class="business-name">Dreamland Motel and Restaurant</h3>
+          <p class="business-desc">Recently updated 18 rooms. Restaurant is now closed for the Winter, see "Chomp House" on FB for Breakfast, Lunch & Dinner.</p>
+          <ul class="business-info-list">
+            <li><i class="fab fa-facebook"></i> <a href="https://www.facebook.com/adobadreamland" target="_blank">Dreamland Motel on Facebook</a></li>
+            <li><i class="fas fa-map-marker-alt"></i> 1520 US Highway 2, Gulliver, MI 49840</li>
+            <li><i class="fas fa-phone"></i> 906-286-3414</li>
+          </ul>
+        </div>
+
+        <div class="business-card">
+          <h3 class="business-name">Graymont Western Lime Inc</h3>
+          <p class="business-desc">Graymont Port Inland - Global leader in lime and limestone solutions.</p>
+          <ul class="business-info-list">
+            <li><i class="fas fa-globe"></i> <a href="http://graymont.com" target="_blank">graymont.com</a></li>
+            <li><i class="fas fa-map-marker-alt"></i> Port Inland Road, Gulliver, MI, 49840</li>
+            <li><i class="fas fa-phone"></i> 906-283-2900</li>
+          </ul>
+        </div>
+
+        <div class="business-card">
+          <h3 class="business-name">Medical Greens Inc.</h3>
+          <p class="business-desc">Wholesale medical and recreational cannabis growers.</p>
+          <ul class="business-info-list">
+            <li><i class="fas fa-phone"></i> 954-444-6660</li>
+          </ul>
+        </div>
+
+        <div class="business-card">
+          <h3 class="business-name">Seul Choix Pointe Light House</h3>
+          <p class="business-desc">Only active light on the shores of Lake Michigan</p>
+          <ul class="business-info-list">
+            <li><i class="fas fa-globe"></i> <a href="https://www.greatlakelighthouse.com/" target="_blank">greatlakelighthouse.com</a></li>
+            <li><i class="fab fa-facebook"></i> <a href="https://www.facebook.com/SeulChoixPointLighthouse" target="_blank">Seul Choix Pointe Lighthouse</a></li>
+            <li><i class="fas fa-map-marker-alt"></i> 3183 Co Hwy 431, Gulliver MI 49840</li>
+            <li><i class="fas fa-phone"></i> 906-283-3183</li>
+          </ul>
+        </div>
+
+        <div class="business-card">
+          <h3 class="business-name">The Cake Lady</h3>
+          <p class="business-desc">Gourmet Cakes & Custom Desserts. Owner-Brianna Tuttle</p>
+          <ul class="business-info-list">
+            <li><i class="fas fa-globe"></i> <a href="http://thecakeladyat19acres.com" target="_blank">thecakeladyat19acres.com</a></li>
+            <li><i class="fas fa-envelope"></i> <a href="mailto:thecakeladyat19acres@gmail.com">thecakeladyat19acres@gmail.com</a></li>
+            <li><i class="fas fa-phone"></i> 906-286-1572</li>
+          </ul>
+        </div>
+
+        <div class="business-card">
+          <h3 class="business-name">Tucker Farm</h3>
+          <p class="business-desc">Eggs, maple sugar and syrup</p>
+          <ul class="business-info-list">
+            <li><i class="fas fa-map-marker-alt"></i> 1624 W US Highway 2, Gulliver, MI 49838</li>
+            <li><i class="fas fa-phone"></i> 815-685-0828</li>
+          </ul>
+        </div>
+
+        <div class="business-card">
+          <h3 class="business-name">Tuttle Forest Products</h3>
+          <p class="business-desc">Lumber store in Gulliver, MI.</p>
+          <ul class="business-info-list">
+            <li><i class="fas fa-globe"></i> <a href="http://tuttlescedaryard.com/" target="_blank">tuttlescedaryard.com</a></li>
+            <li><i class="fas fa-map-marker-alt"></i> 1964 US-2, Gulliver, MI 49840</li>
+            <li><i class="fas fa-phone"></i> 906-283-3871</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer mt-3">
+    <div class="footer-gradient-bar mb-2"></div>
+    <div class="container">
+      <p>Copyright of SineTech LLC 2022</p>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

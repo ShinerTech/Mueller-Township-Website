@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Welcome to Our New Website! - Mueller Township</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <style>
+    .single-post {
+      background: white;
+      border: 1px solid #eaeaea;
+      border-radius: 8px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    .single-post-title {
+      color: #1e73be;
+      margin-top: 0;
+      font-size: 2.5rem;
+    }
+    .post-meta {
+      color: #666;
+      font-size: 0.9rem;
+      margin-bottom: 2rem;
+      display: flex;
+      gap: 1.5rem;
+      border-bottom: 2px solid #eaeaea;
+      padding-bottom: 1rem;
+    }
+    .post-meta i {
+      margin-right: 0.5rem;
+      color: #dd3333;
+    }
+    .post-content img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+    }
+    .comments-area {
+      margin-top: 3rem;
+      border-top: 2px solid #dd3333;
+      padding-top: 2rem;
+    }
+    .comment-list {
+      list-style: none;
+      padding: 0;
+    }
+    .comment-box {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      padding: 1rem;
+      background: #f9f9f9;
+      border-radius: 8px;
+      border: 1px solid #eaeaea;
+    }
+    .comment-avatar img {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .comment-author {
+      font-weight: 600;
+      color: #1e73be;
+      font-size: 1.1rem;
+    }
+    .comment-date {
+      color: #666;
+      font-size: 0.85rem;
+      margin-bottom: 0.5rem;
+    }
+    .back-btn {
+      display: inline-block;
+      margin-bottom: 1rem;
+      color: #1e73be;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .back-btn:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-info">
+        <span><i class="fas fa-map-marker-alt"></i> 1805 Quarry Rd., Gulliver, MI 49840</span>
+        <span><i class="fas fa-phone"></i> 906-450-4149</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header & Nav -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-main">
+        <div class="logo">
+          <a href="/index.htm">
+            <img src="/wp-content/uploads/2022/02/cropped-Mueller-Township-2.png" alt="Mueller Township Logo" />
+          </a>
+        </div>
+        
+        <button class="mobile-nav-toggle" id="mobile-nav-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <nav class="main-nav" id="main-nav">
+          <ul>
+            <li><a href="/index.htm">Home</a></li>
+            <li><a href="/about-us/index.htm">About</a></li>
+            <li><a href="/services/index.htm">Services</a></li>
+            <li><a href="/contact-us/index.htm">Contact</a></li>
+            <li><a href="/events/index.htm">Events</a></li>
+            <li><a href="/records/index.htm">Records</a></li>
+            <li><a href="/blog/index.htm" class="active">Blog</a></li>
+            <li><a href="/local-businesses/index.htm">Businesses & Attractions</a></li>
+            <li><a href="/education-and-worship/index.htm">Education & Worship</a></li>
+            <li><a href="/gallery/index.htm">Gallery</a></li>
+            <li><a href="/links/index.htm">Links</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="footer-gradient-bar"></div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="container" style="max-width: 800px;">
+      
+      <a href="/blog/index.htm" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Blog</a>
+
+      <div class="single-post">
+        <h1 class="single-post-title">Welcome to Our New Website!</h1>
+        <div class="post-meta">
+          <span><i class="far fa-calendar-alt"></i> February 7, 2022</span>
+          <span><i class="fas fa-user"></i> muellertownship</span>
+          <span><i class="fas fa-comments"></i> 3 Comments</span>
+        </div>
+        
+        <div class="post-content">
+          <img src="/wp-content/uploads/2022/03/MTG_6.png" alt="Township Meeting">
+          <p>The Mueller Township Board has developed a new website at <a href="http://www.muellertownship.com/" target="_blank">www.muellertownship.com</a>! This new site is to serve as an information resource for both residents and visitors. Be sure to check the site for the latest updates from the Township including announcements, events, and services. You can also find meeting notices, meeting minutes, ordinances, election information, and so much more.</p>
+        </div>
+
+        <div class="comments-area" id="comments">
+          <h2 class="comments-title">3 Replies to "Welcome to Our New Website!"</h2>
+          
+          <ul class="comment-list">
+            <li>
+              <div class="comment-box">
+                <div class="comment-avatar">
+                  <img src="/avatar/9fe6be877889294e86330aae1e4040dc5a3c242b461623f830f97fb7eb6d74e8.jpg" alt="Mike Hoar">
+                </div>
+                <div class="comment-text">
+                  <div class="comment-author">Mike Hoar</div>
+                  <div class="comment-date">April 4, 2022 at 8:39 pm</div>
+                  <p>Thank you to Mueller Township for allowing SineTech to help with this new site!</p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="comment-box">
+                <div class="comment-avatar">
+                  <img src="/avatar/c88f63dfde68ee02d8ddf3db349cd702e3a1cb89983cd41f77859eff7322be3c.jpg" alt="Sam Pfeiffer">
+                </div>
+                <div class="comment-text">
+                  <div class="comment-author">Sam Pfeiffer</div>
+                  <div class="comment-date">April 4, 2022 at 10:56 pm</div>
+                  <p>Thank you to Mike and Ally at Sinetech for developing this website for Mueller Township. It will provide a great source of information for current residents and businesses. Additionally, those considering to locate here will find worthwhile information. Thank you.</p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="comment-box">
+                <div class="comment-avatar">
+                  <img src="/avatar/3983f3bfaa7bd5c07d15e9a14f3f104b59a3ae05c8c0e1f3ed3e678a7c2c0d4b.jpg" alt="Matt Fischer">
+                </div>
+                <div class="comment-text">
+                  <div class="comment-author">Matt Fischer</div>
+                  <div class="comment-date">August 19, 2025 at 6:31 am</div>
+                  <p>Hello my name is Matt Fischer twp trustee im here fore the pepols voice .please contact me with your conserns regarding Muller Twp your voice of the pepole .</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer mt-3">
+    <div class="footer-gradient-bar mb-2"></div>
+    <div class="container">
+      <p>&copy; 2026 Mueller Township. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

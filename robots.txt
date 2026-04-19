@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.muellertownship.com/sitemap.xml

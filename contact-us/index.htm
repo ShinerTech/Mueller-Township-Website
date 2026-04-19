@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us - Mueller Township</title>
+  
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <style>
+    /* Contact Page Specific Styles */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .contact-card {
+      background: white;
+      border: 1px solid #eaeaea;
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+      transition: transform 0.2s, box-shadow 0.2s;
+      border-top: 4px solid #1e73be;
+    }
+    .contact-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    }
+    .contact-card h3 {
+      font-size: 1.25rem;
+      color: #dd3333;
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+    }
+    .contact-card p {
+      margin: 0.5rem 0;
+      font-size: 0.95rem;
+      color: #4a4a4a;
+    }
+    .contact-card i {
+      color: #1e73be;
+      width: 24px;
+      text-align: center;
+      margin-right: 8px;
+    }
+    .map-container {
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      border: 1px solid #eaeaea;
+    }
+    .map-container iframe {
+      width: 100%;
+      height: 400px;
+      border: none;
+      display: block;
+    }
+    .contact-cta {
+      background-color: #f8f9fa;
+      padding: 2rem;
+      border-radius: 8px;
+      text-align: center;
+      margin-top: 2rem;
+      border: 1px solid #eaeaea;
+    }
+    .contact-cta p {
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+      color: #333;
+    }
+    .contact-btn {
+      display: inline-block;
+      background-color: #1e73be;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.2s;
+    }
+    .contact-btn:hover {
+      background-color: #15558d;
+      color: white;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-info">
+        <span><i class="fas fa-map-marker-alt"></i> 1805 Quarry Rd., Gulliver, MI 49840</span>
+        <span><i class="fas fa-phone"></i> 906-450-4149</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header & Nav -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-main">
+        <div class="logo">
+          <a href="/index.htm">
+            <img src="/wp-content/uploads/2022/02/cropped-Mueller-Township-2.png" alt="Mueller Township Logo" />
+          </a>
+        </div>
+        
+        <button class="mobile-nav-toggle" id="mobile-nav-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <nav class="main-nav" id="main-nav">
+          <ul>
+            <li><a href="/index.htm">Home</a></li>
+            <li><a href="/about-us/index.htm">About</a></li>
+            <li><a href="/services/index.htm">Services</a></li>
+            <li><a href="/contact-us/index.htm" class="active">Contact</a></li>
+            <li><a href="/events/index.htm">Events</a></li>
+            <li><a href="/records/index.htm">Records</a></li>
+            <li><a href="/blog/index.htm">Blog</a></li>
+            <li><a href="/local-businesses/index.htm">Businesses & Attractions</a></li>
+            <li><a href="/education-and-worship/index.htm">Education & Worship</a></li>
+            <li><a href="/gallery/index.htm">Gallery</a></li>
+            <li><a href="/links/index.htm">Links</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="footer-gradient-bar"></div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="container">
+      <h1 class="page-title text-center">Contact Us</h1>
+      <p class="text-center lead">We'd love to hear from you. Please reach out to our township officials using the information below.</p>
+      
+      <div class="contact-grid">
+        <!-- Township Information -->
+        <div class="contact-card">
+          <h3>Township Information</h3>
+          <p><i class="fas fa-map-marker-alt"></i> <strong>Township Hall:</strong><br/>1805W Quarry Rd.<br/>Gulliver, MI 49840</p>
+          <p><i class="fas fa-envelope"></i> <strong>Mailing Address:</strong><br/>PO Box 32<br/>Gulliver, MI 49840-0032</p>
+        </div>
+
+        <!-- Supervisor -->
+        <div class="contact-card">
+          <h3>Supervisor</h3>
+          <p><strong>Sam Pfeiffer</strong></p>
+          <p><i class="fas fa-envelope"></i> PO Box 32, Gulliver, MI 49840-0032</p>
+          <p><i class="fas fa-phone"></i> (248) 613-6810</p>
+          <p><i class="fas fa-at"></i> <a href="mailto:Muellersupervisor@yahoo.com">Muellersupervisor@yahoo.com</a></p>
+        </div>
+
+        <!-- Clerk -->
+        <div class="contact-card">
+          <h3>Clerk</h3>
+          <p><strong>Donna Glasscock</strong></p>
+          <p><i class="fas fa-envelope"></i> PO Box 32, Gulliver MI 49840-0032</p>
+          <p><i class="fas fa-at"></i> <a href="mailto:muellertwpdglasscock@gmail.com">muellertwpdglasscock@gmail.com</a></p>
+        </div>
+
+        <!-- Treasurer -->
+        <div class="contact-card">
+          <h3>Treasurer</h3>
+          <p><strong>Mary Lee</strong></p>
+          <p><i class="fas fa-envelope"></i> PO Box 32, Gulliver MI 49840-0032</p>
+          <p><i class="fas fa-phone"></i> (517) 270-0600</p>
+        </div>
+
+        <!-- Trustee 1 -->
+        <div class="contact-card">
+          <h3>Trustee</h3>
+          <p><strong>Matt Fischer</strong></p>
+          <p><i class="fas fa-envelope"></i> PO Box 32, Gulliver MI 49840-9071</p>
+          <p><i class="fas fa-at"></i> <a href="mailto:muellertwptrustee@gmail.com">muellertwptrustee@gmail.com</a></p>
+        </div>
+        
+        <!-- Trustee 2 -->
+        <div class="contact-card">
+          <h3>Trustee</h3>
+          <p><em>Position Details Forthcoming</em></p>
+          <p><i class="fas fa-envelope"></i> PO Box 32, Gulliver MI 49840-9071</p>
+        </div>
+
+        <!-- Assessor -->
+        <div class="contact-card">
+          <h3>Assessor</h3>
+          <p><strong>Nicole Merlo</strong></p>
+          <p><i class="fas fa-map-marker-alt"></i> 110 S Shag Lake Dr, Gwinn MI 49841</p>
+          <p><i class="fas fa-phone"></i> 906-360-2969</p>
+          <p><i class="fas fa-at"></i> <a href="mailto:merloassessing@gmail.com">merloassessing@gmail.com</a></p>
+        </div>
+      </div>
+
+      <!-- Contact Call to Action (Replaces Form) -->
+      <div class="contact-cta">
+        <h3>Need to send us a message?</h3>
+        <p>If you have any specific inquiries, please direct your email to the appropriate township official listed above, or contact our Township Clerk directly.</p>
+        <a href="mailto:muellertwpdglasscock@gmail.com" class="contact-btn"><i class="fas fa-envelope"></i> Email Township Clerk</a>
+      </div>
+
+      <!-- Google Maps Embed -->
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2757.251503923238!2d-85.95251842322307!3d46.06606017109206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4d4c82c6c3905007%3A0x6bba8dd7a5f4de1f!2s1805%20Quarry%20Rd%2C%20Gulliver%2C%20MI%2049840!5e0!3m2!1sen!2sus!4v1713550201201!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-gradient-bar mb-2"></div>
+    <div class="container">
+      <p>&copy; 2026 Mueller Township. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Custom JS -->
+  <script src="/assets/js/main.js"></script>
+
+</body>
+</html>

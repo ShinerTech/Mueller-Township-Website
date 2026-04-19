@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery - Mueller Township</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <style>
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .gallery-item {
+      position: relative;
+      border-radius: 8px;
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      background-color: #f1f1f1;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      border: 1px solid #eaeaea;
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+    .gallery-item:hover img {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-info">
+        <span><i class="fas fa-map-marker-alt"></i> 1805 Quarry Rd., Gulliver, MI 49840</span>
+        <span><i class="fas fa-phone"></i> 906-450-4149</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header & Nav -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-main">
+        <div class="logo">
+          <a href="/index.htm">
+            <img src="/wp-content/uploads/2022/02/cropped-Mueller-Township-2.png" alt="Mueller Township Logo" />
+          </a>
+        </div>
+        
+        <button class="mobile-nav-toggle" id="mobile-nav-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <nav class="main-nav" id="main-nav">
+          <ul>
+            <li><a href="/index.htm">Home</a></li>
+            <li><a href="/about-us/index.htm">About</a></li>
+            <li><a href="/services/index.htm">Services</a></li>
+            <li><a href="/contact-us/index.htm">Contact</a></li>
+            <li><a href="/events/index.htm">Events</a></li>
+            <li><a href="/records/index.htm">Records</a></li>
+            <li><a href="/blog/index.htm">Blog</a></li>
+            <li><a href="/local-businesses/index.htm">Businesses & Attractions</a></li>
+            <li><a href="/education-and-worship/index.htm">Education & Worship</a></li>
+            <li><a href="/gallery/index.htm" class="active">Gallery</a></li>
+            <li><a href="/links/index.htm">Links</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="footer-gradient-bar"></div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="container">
+      <h1 class="page-title text-center">Gallery</h1>
+      
+      <div class="gallery-grid">
+        <div class="gallery-item"><img src="/wp-content/uploads/2022/02/20220220_132706.jpg" alt="Gallery Image 1" onerror="this.onerror=null; this.src=this.src.replace('.jpg', '-1024x451.jpg'); if (this.src.includes('-1024x451.jpg')) this.onerror=function(){this.src='/wp-content/uploads/2022/02/20220220_132706-1024x451.jpg'};"></div>
+        <div class="gallery-item"><img src="/wp-content/uploads/2022/02/20220220_132644.jpg" alt="Gallery Image 2" onerror="this.onerror=null; this.src=this.src.replace('.jpg', '-1024x468.jpg'); if (this.src.includes('-1024x468.jpg')) this.onerror=function(){this.src='/wp-content/uploads/2022/02/20220220_132644-1024x468.jpg'};"></div>
+        <div class="gallery-item"><img src="/wp-content/uploads/2022/02/20220220_132629.jpg" alt="Gallery Image 3" onerror="this.onerror=null; this.src=this.src.replace('.jpg', '-1024x548.jpg'); if (this.src.includes('-1024x548.jpg')) this.onerror=function(){this.src='/wp-content/uploads/2022/02/20220220_132629-1024x548.jpg'};"></div>
+        <div class="gallery-item"><img src="/wp-content/uploads/2022/02/20220220_132557.jpg" alt="Gallery Image 4" onerror="this.onerror=null; this.src=this.src.replace('.jpg', '-623x1024.jpg'); if (this.src.includes('-623x1024.jpg')) this.onerror=function(){this.src='/wp-content/uploads/2022/02/20220220_132557-623x1024.jpg'};"></div>
+        <div class="gallery-item"><img src="/wp-content/uploads/2022/02/20220220_132935.jpg" alt="Gallery Image 5" onerror="this.onerror=null; this.src=this.src.replace('.jpg', '-562x1024.jpg'); if (this.src.includes('-562x1024.jpg')) this.onerror=function(){this.src='/wp-content/uploads/2022/02/20220220_132935-562x1024.jpg'};"></div>
+        <div class="gallery-item"><img src="/wp-content/uploads/2022/03/imagejpeg_0-edited.jpg" alt="Gallery Image 6"></div>
+        <div class="gallery-item"><img src="/wp-content/uploads/2022/02/20220220_132615.jpg" alt="Gallery Image 7" onerror="this.onerror=null; this.src=this.src.replace('.jpg', '-635x1024.jpg'); if (this.src.includes('-635x1024.jpg')) this.onerror=function(){this.src='/wp-content/uploads/2022/02/20220220_132615-635x1024.jpg'};"></div>
+        <div class="gallery-item"><img src="/wp-content/uploads/2022/02/20220220_132533.jpg" alt="Gallery Image 8" onerror="this.onerror=null; this.src=this.src.replace('.jpg', '-1024x660.jpg'); if (this.src.includes('-1024x660.jpg')) this.onerror=function(){this.src='/wp-content/uploads/2022/02/20220220_132533-1024x660.jpg'};"></div>
+        <div class="gallery-item"><img src="/wp-content/uploads/2022/03/MTG_7.jpg" alt="Gallery Image 9"></div>
+        <div class="gallery-item"><img src="/wp-content/uploads/2022/03/MTG_1.jpg" alt="Gallery Image 10" onerror="this.onerror=null; this.src=this.src.replace('.jpg', '-1024x510.jpg'); if (this.src.includes('-1024x510.jpg')) this.onerror=function(){this.src='/wp-content/uploads/2022/03/MTG_1-1024x510.jpg'};"></div>
+        <div class="gallery-item"><img src="/wp-content/uploads/2022/03/DJI_0133.jpg" alt="Gallery Image 11" onerror="this.onerror=null; this.src=this.src.replace('.jpg', '-1024x768.jpg'); if (this.src.includes('-1024x768.jpg')) this.onerror=function(){this.src='/wp-content/uploads/2022/03/DJI_0133-1024x768.jpg'};"></div>
+        <div class="gallery-item"><img src="/wp-content/uploads/2022/03/DJI_0138.jpg" alt="Gallery Image 12" onerror="this.onerror=null; this.src=this.src.replace('.jpg', '-1024x768.jpg'); if (this.src.includes('-1024x768.jpg')) this.onerror=function(){this.src='/wp-content/uploads/2022/03/DJI_0138-1024x768.jpg'};"></div>
+        <div class="gallery-item"><img src="/wp-content/uploads/2022/03/DJI_0130.jpg" alt="Gallery Image 13" onerror="this.onerror=null; this.src=this.src.replace('.jpg', '-1024x768.jpg'); if (this.src.includes('-1024x768.jpg')) this.onerror=function(){this.src='/wp-content/uploads/2022/03/DJI_0130-1024x768.jpg'};"></div>
+        <div class="gallery-item"><img src="/wp-content/uploads/2026/01/CertAchSOM142026-1.jpg" alt="Gallery Image 14" onerror="this.onerror=null; this.src=this.src.replace('.jpg', '-1024x789.jpg'); if (this.src.includes('-1024x789.jpg')) this.onerror=function(){this.src='/wp-content/uploads/2026/01/CertAchSOM142026-1-1024x789.jpg'};"></div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer mt-3">
+    <div class="footer-gradient-bar mb-2"></div>
+    <div class="container">
+      <p>Copyright of SineTech LLC 2022</p>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

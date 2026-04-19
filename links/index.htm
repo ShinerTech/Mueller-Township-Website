@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Links - Mueller Township</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <style>
+    .links-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .link-card {
+      background: white;
+      border: 1px solid #eaeaea;
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      transition: transform 0.2s, box-shadow 0.2s;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      text-decoration: none;
+      color: #333;
+    }
+    .link-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      border-color: #dd3333;
+    }
+    .link-icon {
+      background: #f1f5f9;
+      color: #1e73be;
+      border-radius: 50%;
+      min-width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      transition: background 0.3s, color 0.3s;
+    }
+    .link-card:hover .link-icon {
+      background: #1e73be;
+      color: white;
+    }
+    .link-content strong {
+      display: block;
+      color: #dd3333;
+      font-size: 1.1rem;
+      margin-bottom: 0.25rem;
+      transition: color 0.3s;
+    }
+    .link-card:hover .link-content strong {
+      color: #1e73be;
+    }
+    .link-content span {
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-info">
+        <span><i class="fas fa-map-marker-alt"></i> 1805 Quarry Rd., Gulliver, MI 49840</span>
+        <span><i class="fas fa-phone"></i> 906-450-4149</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header & Nav -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-main">
+        <div class="logo">
+          <a href="/index.htm">
+            <img src="/wp-content/uploads/2022/02/cropped-Mueller-Township-2.png" alt="Mueller Township Logo" />
+          </a>
+        </div>
+        
+        <button class="mobile-nav-toggle" id="mobile-nav-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <nav class="main-nav" id="main-nav">
+          <ul>
+            <li><a href="/index.htm">Home</a></li>
+            <li><a href="/about-us/index.htm">About</a></li>
+            <li><a href="/services/index.htm">Services</a></li>
+            <li><a href="/contact-us/index.htm">Contact</a></li>
+            <li><a href="/events/index.htm">Events</a></li>
+            <li><a href="/records/index.htm">Records</a></li>
+            <li><a href="/blog/index.htm">Blog</a></li>
+            <li><a href="/local-businesses/index.htm">Businesses & Attractions</a></li>
+            <li><a href="/education-and-worship/index.htm">Education & Worship</a></li>
+            <li><a href="/gallery/index.htm">Gallery</a></li>
+            <li><a href="/links/index.htm" class="active">Links</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="footer-gradient-bar"></div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="container">
+      <h1 class="page-title text-center">Important Links & Resources</h1>
+      
+      <div class="links-grid">
+        
+        <a href="https://www.greatlakelighthouse.com/" target="_blank" class="link-card">
+          <div class="link-icon"><i class="fas fa-external-link-alt"></i></div>
+          <div class="link-content">
+            <strong>Seul Choix Point Lighthouse</strong>
+            <span>Visit the Great Lake Lighthouse website</span>
+          </div>
+        </a>
+
+        <a href="/wp-content/uploads/2022/02/Application-Medical-Marijuana.pdf" target="_blank" class="link-card">
+          <div class="link-icon"><i class="fas fa-file-pdf"></i></div>
+          <div class="link-content">
+            <strong>Application Medical Marihuana</strong>
+            <span>Download PDF form</span>
+          </div>
+        </a>
+
+        <a href="/wp-content/uploads/2022/02/Application-Adult-Use-Marijuana.pdf" target="_blank" class="link-card">
+          <div class="link-icon"><i class="fas fa-file-pdf"></i></div>
+          <div class="link-content">
+            <strong>Application Adult Use Marihuana</strong>
+            <span>Download PDF form</span>
+          </div>
+        </a>
+
+        <a href="https://manistiqueschools.org/" target="_blank" class="link-card">
+          <div class="link-icon"><i class="fas fa-external-link-alt"></i></div>
+          <div class="link-content">
+            <strong>Manistique Area Schools</strong>
+            <span>Visit school website</span>
+          </div>
+        </a>
+
+        <a href="http://stfrancisofmanistique.weconnect.com" target="_blank" class="link-card">
+          <div class="link-icon"><i class="fas fa-external-link-alt"></i></div>
+          <div class="link-content">
+            <strong>St Francis de Sales School</strong>
+            <span>Visit school website</span>
+          </div>
+        </a>
+
+        <a href="http://3lakesacademy.com" target="_blank" class="link-card">
+          <div class="link-icon"><i class="fas fa-external-link-alt"></i></div>
+          <div class="link-content">
+            <strong>Three Lakes Academy</strong>
+            <span>Visit school website</span>
+          </div>
+        </a>
+
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer mt-3">
+    <div class="footer-gradient-bar mb-2"></div>
+    <div class="container">
+      <p>Copyright of SineTech LLC 2022</p>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>
