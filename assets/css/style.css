@@ -1,7 +1,7 @@
 /* assets/css/style.css */
 :root {
-  /* Brand Colors - Modernized Palette */
-  --primary-red: #e65555;
+  /* Brand Colors - Modernized Palette with improved contrast */
+  --primary-red: #cf2b2b;
   --primary-blue: #2563eb;
   --secondary-blue: #1e40af;
   --text-dark: #1f2937;
@@ -42,6 +42,18 @@ body {
   color: var(--text-dark);
   line-height: 1.6;
   background-color: var(--bg-light);
+}
+
+/* Screen Reader Only */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
 }
 
 a {
@@ -201,6 +213,33 @@ html {
   background-color: var(--secondary-blue);
   box-shadow: var(--shadow-md);
   transform: translateY(-1px);
+}
+
+/* Accessible Focus States */
+*:focus {
+  outline: 2px solid var(--primary-blue);
+  outline-offset: 2px;
+  transition: outline-color 0.3s ease;
+}
+
+*:hover:focus {
+  outline-color: var(--primary-red);
+}
+
+button:focus,
+a:focus {
+  outline: none;
+  box-shadow: var(--shadow-md);
+}
+
+/* Custom focus styles */
+.btn-primary:focus {
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.5);
+}
+
+.link-card:hover .link-icon i,
+.link-card:focus .link-icon i {
+  color: white;
 }
 
 .btn-primary:active {
