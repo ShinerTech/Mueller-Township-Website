@@ -1,0 +1,8 @@
+title: Mueller Township
+description: Mueller Township Website
+url: ""
+permalink: /:year/:month/:day/:title/
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
