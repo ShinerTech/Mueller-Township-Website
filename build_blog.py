@@ -50,8 +50,18 @@ def build():
                 fm['permalink'] = url
             fm['url'] = url
             
+            # Calculate relative root
+            out_path = url.lstrip('/')
+            depth = out_path.count('/')
+            relative_root = '../' * depth if depth > 0 else './'
+
             # Extract excerpt
             html_content = markdown.markdown(md_content)
+            
+            # Fix absolute paths in markdown content
+            html_content = re.sub(r'href="/([^/])', f'href="{relative_root}\\1', html_content)
+            html_content = re.sub(r'src="/([^/])', f'src="{relative_root}\\1', html_content)
+            
             fm['content'] = html_content
             
             excerpt = html_content.split('</p>')[0].replace('<p>', '')
@@ -60,9 +70,14 @@ def build():
             
             posts.append(fm)
             
+            # Calculate relative root
+            out_path = url.lstrip('/')
+            depth = out_path.count('/')
+            relative_root = '../' * depth if depth > 0 else './'
+
             # Render post
             post_template = env.get_template('_layouts/post.html')
-            rendered = post_template.render(page=fm, post_content=html_content)
+            rendered = post_template.render(page=fm, post_content=html_content, relative_root=relative_root)
             
             # Write to file
             out_path = url.lstrip('/')
@@ -76,7 +91,7 @@ def build():
 
     # Generate blog index
     blog_template = env.get_template('blog/index_template.html')
-    rendered_index = blog_template.render(site={'posts': posts}, page={'url': '/blog/index.htm', 'title': 'Blog'})
+    rendered_index = blog_template.render(site={'posts': posts}, page={'url': '/blog/index.htm', 'title': 'Blog'}, relative_root='../')
     with open('blog/index.htm', 'w', encoding='utf-8') as f:
         f.write(rendered_index)
     print("Generated blog/index.htm")
